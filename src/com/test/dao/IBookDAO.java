@@ -30,6 +30,11 @@ public interface IBookDAO {
 	List<Book> searchByAuthor(String author);
 	
 	/**
+	 * 根据ID查询图书
+	 * **/
+	Book searchByID(int id);
+	
+	/**
 	 * 根据价格由高到低进行排列
 	 * @param method
 	 * */
@@ -46,7 +51,13 @@ public interface IBookDAO {
 	 * */
 	boolean deletebook(int id);
 	
+	/**
+	 * 更新某本图书的信息
+	 * */
+	boolean updateBook(Book book);
 	
-	
-	
+	/**
+	 * 列出图书的所有分类
+	 * **/
+	List<String> showCategory();
 }

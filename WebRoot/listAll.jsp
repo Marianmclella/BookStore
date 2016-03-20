@@ -21,8 +21,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <input type="button" value="组合按钮" class="group_btn"/>
         </section>
         
-        
-        
         <section>
 
             <h2><strong style="color:grey;">页面标题及表格/分页（根据具体情况列入重点，切勿放置可扩展内容不定的数据）</strong></h2>
@@ -46,8 +44,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 	List<Book> books =(List<Book>)request.getAttribute("books");
                 	for(Book book : books){%>
                 <tr>
-                    <td style="width:265px;"><div class="cut_title ellipsis"><%=book.getId()%></div></td>
-                    <td><%=book.getName() %></td>
+                    <td style="width:265px;"><div class="cut_title ellipsis"><a href="bookInfo?id=<%=book.getId()%>"><%=book.getId()%></a></div></td>
+                    <td><a href="bookInfo?id=<%=book.getId()%>"><%=book.getName() %></a></td>
                     <td><%=book.getAuthor() %></td>
                     <td><%=book.getPrice() %></td>
                     <td><%=book.getCategrory() %></td>

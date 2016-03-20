@@ -56,4 +56,17 @@ public class TestBookDAOImpl {
 	public void testDeleteBook(){
 		System.out.println(bookDAO.deletebook(1101));
 	}
+	
+	@Test
+	public void testUpdate(){
+		Book book = new Book();
+		book.setName("test");
+		book.setAuthor("test");
+		book.setCategrory("test");
+		book.setPrice(20);
+		book.setStock(100);
+		book.setIntroduce("test");
+		book.setId(123456);
+		System.out.println(bookDAO.updateBook(book));
+	}
 }

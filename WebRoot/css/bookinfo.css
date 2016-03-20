@@ -1,0 +1,158 @@
+.head_index{
+    height: 40px; margin-top: 5px;
+    background:#F8F8F8 ;
+    border:1px solid #DDDDDD;
+}
+.head_index span{
+    text-align:left; line-height: 40px;
+}
+.contain{
+    padding: 20px; margin-top:10px;
+}
+.contain_1{
+    clear: both;
+    overflow: hidden;
+    position: relative;
+}
+.contain_left{
+    padding: 10px;
+    float: left;
+    border: 1px solid #DDDDDD;
+}
+.contain_right{
+    float: left;
+    position: absolute;
+    width: 69.4%;margin-left: 352px;
+}
+.right_head{
+    text-align: left;
+    height: 40px;padding-left: 5px;
+    border-bottom-width:2px;
+    margin-top: 20px; width: 100%;
+    border-bottom: dashed 1px  #c0c0c0;
+}
+.right_head p{
+    font-size: 20px; float: left;
+}
+.input_name{
+    border: 0px;
+    font-size: 20px;
+    background:transparent;
+    float: left; width:150px;
+    margin-top: -5px;
+}
+.right_head select{
+    margin-top: -5px; height: 30px;
+}
+.edit_input{
+    height: 38px;
+    margin-top:-12px;width: 100px;
+    border-radius: 5px;float: right;
+    margin-right: 5px;
+}
+.addStock{
+    height: 38px;
+    margin-top:-12px;width: 100px;
+    border-radius: 5px;
+    float: right;
+    margin-right: 5px;
+}
+.right_info{
+    width: 100%; height: 100px;
+    margin-top: 15px; margin-left: 5px;
+}
+.right_info ul{
+    height: 35px; margin-top: 15px; position: absolute;
+}
+.right_info ul li{
+    float: left; margin-left: 100px;
+}
+.right_price{
+    background:#F8F8F8 ;
+    border:1px solid #DDDDDD;
+    height: 60px;  width: 100%;
+}
+.right_price p{
+    font-size: 25px;
+    margin-left:5px;
+    line-height: 60px;
+    color: #19a97b;
+}
+.right_price p input{
+    height:40px;
+    line-height: 0px;
+    width: 100px;
+    background: transparent;
+    border: 0px;
+}
+.right_intro{
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    margin-top: 20px;
+}
+.right_intro textarea{
+    line-height: 25px;
+    margin-top: 10px;
+    border:1px solid #DDDDDD;
+    width: 99%; height: 150px;
+    background: transparent;
+}
+
+.contain2{
+    padding: 20px; margin-top:10px;
+    border:1px solid #DDDDDD;
+    padding: 0px;
+    height: 400px;
+    width: 100%;
+}
+.tab{
+    background:#F8F8F8 ;
+    width: 99.5%;
+    height: 40px;
+}
+.tab ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.tab ul li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+.tab ul li a.active{
+    background: white;
+    font-weight: bolder;
+    border-top:2px solid #19A97B ;
+    color: #19A97B;
+}
+.tab ul li a{
+    display: block;
+    padding: 0 20px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+.tab_contain{
+    width: 99.5%;
+    height: 200px;
+    display: none;
+    margin-top: 10px;
+}
+.tab ul li a button{
+    border: 0px;
+    background: transparent;
+}
+
+  #bg{ display: none;  position: absolute;  top: 0%;  left: 0%;  width: 100%;  height: 100%;  background-color: black;  z-index:1001;  -moz-opacity: 0.7;  opacity:.70;  filter: alpha(opacity=70);}
+
+
+
+
+
+
+
+
+
+
