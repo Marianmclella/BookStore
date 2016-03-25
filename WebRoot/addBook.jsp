@@ -1,10 +1,11 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" %>
  <%@ page contentType="text/html;charset=UTF-8"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
 			+ request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
+	request.setCharacterEncoding("UTF-8");
 %>
 <jsp:include page="head.jsp"></jsp:include>
 <body>
@@ -15,7 +16,7 @@
 				<h2>
 					<strong style="color:grey;">请输入具体信息</strong>
 				</h2>
-				<form action="addBookServlet" method="post">
+				<form action="addBookServlet" method="post" enctype="multipart/form-data">
 				<ul class="ulColumn2">
 					<li><span class="item_name" style="width:120px;">图书编号：</span>
 						<input type="tel" class="textbox textbox_295"
@@ -52,7 +53,7 @@
 							placeholder="摘要信息" class="textarea" name="introduce"
 							style="width:500px;height:100px;"></textarea></li>
 					<li><span class="item_name" style="width:120px;">上传图片：</span>
-						<label class="uploadImg"> <input type="file" /> <span>上传图片</span>
+						<label class="uploadImg"> <input type="file" name="picUrl" /> <span>上传图片</span>
 					</label></li>
 					<li><span class="item_name" style="width:120px;"></span> <input
 						type="submit" class="link_btn" /></li>
@@ -64,7 +65,7 @@
 </body>
 <<script type="text/javascript">
 	var status = <%=request.getAttribute("status")  %>
-	if(status==1){
+	if(status==200){
 		alert("添加成功");
 	}
 </script>

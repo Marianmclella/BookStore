@@ -80,7 +80,7 @@
 					<form name="bookinfo" method="post" action="bookInfo">
 						<div class="contain_1">
 							<div class="contain_left">
-								<img src="images/zhiling.jpg" width="300">
+								<img src="<%=book.getPicUrl() %>" width="300">
 							</div>
 							<div class="contain_right">
 								<div class="right_head">

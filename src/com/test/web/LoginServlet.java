@@ -41,7 +41,7 @@ public class LoginServlet extends HttpServlet {
 			session.setAttribute("password", password);
 			response.sendRedirect("dashboard.jsp");
 		}else{
-			request.getRequestDispatcher("dashboard.jsp").forward(request, response);
+			request.getRequestDispatcher("listAll?method='all'").forward(request, response);
 		}
 	}
 
